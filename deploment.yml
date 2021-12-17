@@ -22,6 +22,6 @@ spec:
             - containerPort: 8000
           env:
           - name: BLOB_CONN_STR
-            volue: DefaultEndpointsProtocol=https;AccountName=isensblob1;AccountKey=/SQZXwdO+sQregd++wPZvb/CNh57AvNvCQ9SNEcI5JpBg9T/Oajf8YSc4/FoZZJVHNPtkBa742kwaEJbN4kx2g==;EndpointSuffix=core.windows.net
+            value: DefaultEndpointsProtocol=https;AccountName=isensblob1;AccountKey=/SQZXwdO+sQregd++wPZvb/CNh57AvNvCQ9SNEcI5JpBg9T/Oajf8YSc4/FoZZJVHNPtkBa742kwaEJbN4kx2g==;EndpointSuffix=core.windows.net
           - name: ONTO_URL
-            volue: https://isens-onto.azurewebsites.net 
+            value: https://isens-onto.azurewebsites.net 

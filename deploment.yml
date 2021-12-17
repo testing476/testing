@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ontology-lab
+spec:
+  selector:
+    matchLabels:
+      app: ontology-lab
+  template:
+    metadata:
+      labels:
+        app: ontology-lab
+    spec:
+      containers:
+        - name: ontology-lab-container
+          image: isensacr.azurecr.io/ontology:1.0.0
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 8000
+          env:
+          - name: BLOB_CONN_STR
+            volue: DefaultEndpointsProtocol=https;AccountName=isensblob1;AccountKey=/SQZXwdO+sQregd++wPZvb/CNh57AvNvCQ9SNEcI5JpBg9T/Oajf8YSc4/FoZZJVHNPtkBa742kwaEJbN4kx2g==;EndpointSuffix=core.windows.net
+          - name: ONTO_URL
+            volue: https://isens-onto.azurewebsites.net 

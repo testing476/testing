@@ -25,3 +25,7 @@ spec:
             value: DefaultEndpointsProtocol=https;AccountName=isensblob1;AccountKey=/SQZXwdO+sQregd++wPZvb/CNh57AvNvCQ9SNEcI5JpBg9T/Oajf8YSc4/FoZZJVHNPtkBa742kwaEJbN4kx2g==;EndpointSuffix=core.windows.net
           - name: ONTO_URL
             value: https://isens-onto.azurewebsites.net 
+          - name: BLOB_URL
+            value: "https://isensblob1.blob.core.windows.net/" 
+          - name: MANAGE_IDENTITY
+            value: "FALSE"
